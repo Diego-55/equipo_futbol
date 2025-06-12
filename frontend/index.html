@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Jugadores</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Administrador de Jugadores</h1>
+        
+        <div class="form-container">
+            <h2>Agregar Nuevo Jugador</h2>
+            <form id="formJugador">
+                <div class="form-group">
+                    <label for="idJugador">ID Jugador:</label>
+                    <input type="number" id="idJugador" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Posición:</label>
+                    <input type="text" id="position" required>
+                </div>
+                <div class="form-group">
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <input type="text" id="nacionalidad" required>
+                </div>
+                <button type="submit">Guardar Jugador</button>
+            </form>
+        </div>
+        
+        <h2>Lista de Jugadores</h2>
+        <div class="table-container">
+            <table id="tablaJugadores">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Posición</th>
+                        <th>Nacionalidad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los jugadores se cargarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
